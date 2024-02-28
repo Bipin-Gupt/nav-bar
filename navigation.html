@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       *{
+        padding: 0;
+        margin: 0;
+       } nav{
+            background-color: yellow;
+            position: sticky;
+            padding: 0;
+        }
+        #ull{
+            list-style-type: none;
+            display: flex;
+            gap: 20px;
+        }
+        a{
+            text-decoration: none;
+            display: block;
+            padding: 20px;
+            
+
+        }
+        #home{
+          position: absolute;
+          background-color: blue;
+          display: block;
+          list-style-type: none;
+          margin-top: 15px;
+          margin-left: -15px;
+          display: none;
+        }
+        #hom:hover #home{
+          display: block;
+        }
+        #brand:hover #brand1{
+          display: block;
+        }
+        #brand1{
+          position: absolute;
+          background-color: black;
+          display: block;
+          list-style-type: none;
+          margin-left: 54px;
+          margin-top: 16px;
+          display: none;
+        }
+        #user1{
+          position: absolute;
+          background-color:red;
+          display: block;
+          list-style-type: none;
+          margin-left: 97px  ;
+          margin-top: 15px;
+          display: none;
+        }
+        #user:hover #user1{
+          display: block;
+        }
+        a:hover{
+          background-color: green;
+          
+        }
+    </style>/
+</head>
+<body>
+    <nav>
+        <ul id="ull">
+          <li id="hom"><a href="#">home</a>
+            <ul id="home">
+            <li><a href="#">user_detail</a></li>
+            <li><a href="#">wallet</a></li>
+            <li><a href="#">setting</a></li>
+          </ul>
+        </li>
+          
+          <li id="brand"><a href="#" style="margin-left: 50px;">BRAND</a>
+            <ul id="brand1"><li><a href="#">h&m</a></li>
+          <li><a href="#">wallet</a></li>
+          <li><a href="#">setting</a></li>
+        </ul></li>
+          
+          
+          <li id="user"><a href="#" style="margin-left: 110px;">USER</a>
+            <ul id="user1"><li><a href="#">user_detail</a></li>
+          <li><a href="#">wallet</a></li>
+          <li><a href="#">setting</a></li>
+        </ul></li>
+        </ul>
+    </nav>
+</body>
+</html>
